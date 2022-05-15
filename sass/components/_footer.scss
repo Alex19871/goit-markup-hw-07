@@ -1,0 +1,84 @@
+.footer {
+        max-width: 1600px;
+        background-color: var(--hero-footer-bgc-color);
+        
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        &-item {
+                margin-bottom: 9px;
+        }
+        &-item:last-child {
+            margin-bottom: 0px;
+        }
+        & .container {
+            display: flex;
+            align-items: baseline;
+        }
+        &-link {
+            font-style: normal;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+            transition: color 250ms var(--animation);
+        
+            &:hover,
+            &:focus {
+                color: var(--accent-color);
+            }
+        }
+        &-add-link {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: var(--footer-logo-color);
+            transition: color 250ms var(--animation);
+        
+            &:hover,
+            &:focus {
+                color: var(--accent-color);
+            }
+        }
+    }
+    .follow {
+    display: block;
+    margin-left: 70px;
+    &-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        color: var(--main-title-color);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    &-list {
+        display: flex;
+        justify-content: center;
+    }
+    &-link {
+        width: 44px;
+        height: 44px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        fill: var(--main-title-color);
+        transition: background-color 250ms var(--animation);
+        &:hover,&:focus {
+            background-color: var(--accent-color);
+        }
+    }
+    &-item:not(:last-child) {
+        margin-right: 10px;
+    }
+    }
+   

@@ -51,16 +51,16 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    /* outline: 1px solid red; */
 }
 /* ---------------------------HEADER-------------------------- */
 header {
-    
+
     background-color: var(--main-title-color);
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
 }
+
 .logo-part {
     font-family: 'Raleway';
     font-style: normal;
@@ -70,6 +70,7 @@ header {
     letter-spacing: 0.03em;
     color: var(--accent-color);
 }
+
 .logo {
     text-decoration: none;
     font-family: 'Raleway';
@@ -78,106 +79,119 @@ header {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--head-logo-color) }
-    .list {
-        list-style: none;
-        margin-top: 0px;
-    }
-    .link {
-        text-decoration: none;
-    }
-    .header .container {
-        display: flex;
-        align-items: center;
-    }
-    
-   .navigation {
-       display: flex;
-       align-items: center; 
-   }
-    
-    .navigation-menu {
-        display: flex;
-        margin-left: 93px;
-    }
-    
-    .navigation-menu__item:not(:last-child){ 
-        margin-right: 50px;
-    }
-    .navigation-menu__link {
-        position: relative;
-        display: block;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        text-decoration: none;
-        color: var(--header-color);
-        transition: color 250ms var(--animation);
-    }
-    .navigation-menu__link::after {
-        content: '';
-        position: absolute;
-        bottom: -34px;
-        display: block;
-        width: 100%;
-        height: 4px;
-        background-color: var(--accent-color);
-        border-radius: 2px;
-        transform: scale(0);
-        transition: transform 250ms var(--animation);
-    }
-    
-    .navigation-menu__link:hover::after {
-        transform: scale(1);
-    }
-    .pointer {
-        cursor: pointer;
-    }
-    .navigation-menu__link:hover,
-    .navigation-menu__link:focus {
-        color: var(--accent-color);
-    }
-    .navigation-menu .navigation-menu__link.current {
-        color: var(--accent-color);
-    }
-      
-    .contacts-list{
-     display: flex;
+    color: var(--head-logo-color)
+}
+
+.list {
+    list-style: none;
+    margin-top: 0px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-menu {
+    display: flex;
+    margin-left: 93px;
+}
+
+.navigation-menu__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.navigation-menu__link {
+    position: relative;
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--header-color);
+    transition: color 250ms var(--animation);
+}
+
+.navigation-menu__link::after {
+    content: '';
+    position: absolute;
+    bottom: -34px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    transform: scale(0);
+    transition: transform 250ms var(--animation);
+}
+
+.navigation-menu__link:hover::after {
+    transform: scale(1);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.navigation-menu__link:hover,
+.navigation-menu__link:focus {
+    color: var(--accent-color);
+}
+
+.navigation-menu .navigation-menu__link.current {
+    color: var(--accent-color);
+}
+
+.contacts-list {
+    display: flex;
     margin-left: auto;
     justify-content: center;
-    }
-    .header-mail-link {
-        display: flex;
-    }
-  
-    .contacts-list__item:first-child {
-        margin-right: 30px;
-    }
+}
 
-    .contacts-list__link {
-        display: flex;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        color: var(--contacts-color);
-        transition: color 250ms var(--animation);
-    }
-    .contacts-list__mail-icon {
-        margin-right: 10px;
-        fill: currentColor;
-        align-self: center;
-    }
-    .contacts-list__phone-icon {
-        margin-right: 10px;
-        fill: currentColor;
-        align-self: center;
-    }
-    .contacts-list__link:hover,
-    .contacts-list__link:focus {
-        color: var(--accent-color);
-    }
+.header-mail-link {
+    display: flex;
+}
+
+.contacts-list__item:first-child {
+    margin-right: 30px;
+}
+
+.contacts-list__link {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--contacts-color);
+    transition: color 250ms var(--animation);
+}
+
+.contacts-list__mail-icon {
+    margin-right: 10px;
+    fill: currentColor;
+    align-self: center;
+}
+
+.contacts-list__phone-icon {
+    margin-right: 10px;
+    fill: currentColor;
+    align-self: center;
+}
+
+.contacts-list__link:hover,
+.contacts-list__link:focus {
+    color: var(--accent-color);
+}
    
   
     /* ----------------------------------------HERO------------------------------------------- */
@@ -327,7 +341,8 @@ header {
         text-transform: uppercase;
         color: var(--main-title-color);
     }
-   
+   /* ----------------------------------------TEAM---------------------------------------- */
+
     .team {
         background-color: var(--bcg-card-color);
    padding-top: 94px;
@@ -450,7 +465,7 @@ header {
         fill: #2196F3;
         border: 1px solid #2196F3;
     }
-    /* .mail-icon  */
+    
 /* ---------------------------------------FOOTER----------------------------------- */
  
 .footer {
@@ -525,10 +540,7 @@ margin-bottom: 0px;
         display: flex;
         align-items: baseline;
     }
-    /* .footer-content {
-        display: flex;
-        align-items: baseline;
-    } */
+   
     .follow {
         display: block;
         margin-left: 70px;
@@ -596,6 +608,7 @@ margin-bottom: 0px;
         color 250ms var(--animation),
         border-color 250ms var(--animation),
         box-shadow 250ms var(--animation);
+        cursor: pointer;
     }
     .services-item-btn:hover,
     .services-item-btn:focus{
@@ -609,6 +622,8 @@ margin-bottom: 0px;
     .services-list {
         margin-bottom: 34px;
     }
+    /* -------------------------------------------EXAMPLES---------------- */
+
     .examples-title {
         font-weight: 700;
         font-size: 18px;
