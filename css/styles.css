@@ -626,7 +626,7 @@ margin-bottom: 0px;
 
     .examples-title {
         font-weight: 700;
-        font-size: 18px;
+        font-size: var(--card_text);
         line-height: 2;
         letter-spacing: 0.06em;
         color: var(--second-title-color);
@@ -695,7 +695,7 @@ margin-bottom: 0px;
         transition: transform 250ms var(--animation);
         
         font-weight: 400;
-        font-size: 18px;
+        font-size: var(--card_text);
         line-height: 1.55;
         letter-spacing: 0.03em;
         color: var(--main-title-color);

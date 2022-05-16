@@ -1,7 +1,7 @@
 .modal-header {
     margin-bottom: 12px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: var(--modal-top-text);
     line-height: 1.15;
     text-align: center;
     color: var(--header-color);
@@ -12,8 +12,7 @@
     position: relative;
     display: block;
     margin-bottom: 10px;
-
-    font-size: 12px;
+    font-size: var(--form-label-text);
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: var(--main-text-color);
@@ -55,7 +54,7 @@
 .form-name {
     display: block;
     margin-bottom: 4px;
-    font-size: 12px;
+    font-size: var(--form-label-text);
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: var(--main-text-color);
@@ -96,17 +95,11 @@
         transition: background-color 250ms var(--animation), border-color 250ms var(--animation);
     }
     &-text {
-        font-weight: 400;
-        font-size: 14px;
         line-height: 1.71;
-        letter-spacing: 0.03em;
         color: var(--mail_phone_desc);
     }
     &-link {
-        font-weight: 400;
-        font-size: 14px;
         line-height: 1.71;
-        letter-spacing: 0.03em;
         color: var(--accent-color);
     }
 }
@@ -134,7 +127,7 @@
     border-radius: 4px;
     font-weight: 700;
     cursor: pointer;
-    font-size: 16px;
+    font-size: var(--button-text-size);
     line-height: 1.88;
     letter-spacing: 0.06em;
     transition: backgorund-color 250ms var(--animation);

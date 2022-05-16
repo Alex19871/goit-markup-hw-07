@@ -1,6 +1,6 @@
  .examples-title {
      font-weight: 700;
-     font-size: 18px;
+     font-size: var(--card-text);
      line-height: 2;
      letter-spacing: 0.06em;
      color: var(--second-title-color);
@@ -60,7 +60,7 @@
      padding: 63px 24px;
      transform: translateY(101%);
      transition: transform 250ms var(--animation);
-     font-size: 18px;
+     font-size: var(--card-text);
      line-height: 1.55;
      letter-spacing: 0.03em;
      color: var(--main-title-color);

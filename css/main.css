@@ -27,7 +27,7 @@ header .container {
   position: relative;
   display: block;
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--main-text-size);
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -74,7 +74,7 @@ header .container {
 .contacts-list__link {
   display: flex;
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--main-text-size);
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--contacts-color);
@@ -110,7 +110,7 @@ header .container {
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
+  font-size: var(--hero-title);
   width: 696px;
   line-height: 1.36;
   letter-spacing: 0.06em;
@@ -124,7 +124,7 @@ header .container {
   display: inline-block;
   font-family: "Roboto";
   font-weight: 700;
-  font-size: 16px;
+  font-size: var(--button-text-size);
   line-height: 1.88;
   align-items: center;
   text-align: center;
@@ -149,7 +149,7 @@ header .container {
 
 .feature__title {
   font-weight: 700;
-  font-size: 14px;
+  font-size: var(--main-text-size);
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--second-title-color);
@@ -219,7 +219,7 @@ header .container {
 }
 .direction-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: var(--direction-title-size);
   line-height: 1.17;
   text-align: center;
   color: var(--second-title-color);
@@ -236,9 +236,7 @@ header .container {
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-title-color);
 }
@@ -259,7 +257,7 @@ header .container {
 }
 .team-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: var(--direction-title-size);
   line-height: 1.17;
   text-align: center;
   color: var(--second-title-color);
@@ -284,7 +282,7 @@ header .container {
 
 .team-item-title {
   font-weight: 500;
-  font-size: 16px;
+  font-size: var(--team-card-text);
   line-height: 1.19;
   text-align: center;
   color: var(--second-title-color);
@@ -293,7 +291,7 @@ header .container {
 }
 
 .specialty-text {
-  font-size: 16px;
+  font-size: var(--team-card-text);
   line-height: 1.19;
   text-align: center;
   margin-top: 0px;
@@ -308,7 +306,7 @@ header .container {
 .team-soc-link {
   width: 44px;
   height: 44px;
-  background-color: #FFFFFF;
+  background-color: var(--main-title-color);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -317,8 +315,8 @@ header .container {
   transition: fill 250ms var(--animation), background-color 250ms var(--animation);
 }
 .team-soc-link:hover, .team-soc-link:focus {
-  background-color: #2196F3;
-  fill: #FFFFFF;
+  background-color: var(--accent-color);
+  fill: var(--main-title-color);
 }
 
 .team-soc-item + .team-soc-item {
@@ -331,7 +329,7 @@ header .container {
 }
 .clients-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: var(--direction-title-size);
   line-height: 1.17;
   text-align: center;
   color: var(--second-title-color);
@@ -346,16 +344,16 @@ header .container {
   display: flex;
   width: 170px;
   height: 92px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid var(--social-icon-color);
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-  fill: #AFB1B8;
+  fill: var(--social-icon-color);
   transition: fill 250ms var(--animation), border-color 250ms var(--animation);
 }
 .clients-link:hover, .clients-link:focus {
-  fill: #2196F3;
-  border: 1px solid #2196F3;
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 .clients-item + .clients-item {
   margin-left: 30px;
@@ -382,9 +380,7 @@ header .container {
 }
 .footer-link {
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms var(--animation);
 }
@@ -393,10 +389,7 @@ header .container {
 }
 .footer-add-link {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--footer-logo-color);
   transition: color 250ms var(--animation);
 }
@@ -411,10 +404,10 @@ header .container {
 .follow-title {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: var(--main-text-size);
   letter-spacing: 0.03em;
+  font-weight: 700;
+  line-height: 16px;
   color: var(--main-title-color);
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -484,7 +477,7 @@ header .container {
 
 .examples-title {
   font-weight: 700;
-  font-size: 18px;
+  font-size: var(--card-text);
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--second-title-color);
@@ -549,7 +542,7 @@ header .container {
   padding: 63px 24px;
   transform: translateY(101%);
   transition: transform 250ms var(--animation);
-  font-size: 18px;
+  font-size: var(--card-text);
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
@@ -614,7 +607,7 @@ header .container {
 .modal-header {
   margin-bottom: 12px;
   font-weight: 700;
-  font-size: 20px;
+  font-size: var(--modal-top-text);
   line-height: 1.15;
   text-align: center;
   color: var(--header-color);
@@ -624,7 +617,7 @@ header .container {
   position: relative;
   display: block;
   margin-bottom: 10px;
-  font-size: 12px;
+  font-size: var(--form-label-text);
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--main-text-color);
@@ -668,7 +661,7 @@ header .container {
 .form-name {
   display: block;
   margin-bottom: 4px;
-  font-size: 12px;
+  font-size: var(--form-label-text);
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--main-text-color);
@@ -712,17 +705,11 @@ header .container {
   transition: background-color 250ms var(--animation), border-color 250ms var(--animation);
 }
 .checkbox-text {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--mail_phone_desc);
 }
 .checkbox-link {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 
@@ -752,7 +739,7 @@ header .container {
   border-radius: 4px;
   font-weight: 700;
   cursor: pointer;
-  font-size: 16px;
+  font-size: var(--button-text-size);
   line-height: 1.88;
   letter-spacing: 0.06em;
   transition: backgorund-color 250ms var(--animation);
@@ -768,9 +755,7 @@ header .container {
   display: block;
   margin-bottom: 20px;
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--footer-logo-color);
 }
@@ -785,7 +770,7 @@ header .container {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: rgba(0, 0, 0, 0);
-  color: var(--white_color);
+  color: var(--main-title-color);
 }
 .mailing-btn {
   display: flex;
@@ -800,7 +785,7 @@ header .container {
   border-radius: 4px;
   border: none;
   font-weight: 700;
-  font-size: 16px;
+  font-size: var(--button-text-size);
   line-height: 1.88;
   cursor: pointer;
 }
@@ -874,6 +859,15 @@ ul {
   --footer-logo-color: #FFFFFF;
   --animation: cubic-bezier(0.4, 0, 0.2, 1);
   --hover-btn-color: #188CE8;
+  --social-icon-color: #afb1b8;
+  --card-text: 18px;
+  --hero-title: 44px;
+  --main-text-size: 14px;
+  --button-text-size: 16px;
+  --direction-title-size: 36px;
+  --team-card-text: 16px;
+  --modal-top-text: 20px;
+  --form-label-text: 12px;
 }
 
 .logo {

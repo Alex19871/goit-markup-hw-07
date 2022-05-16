@@ -19,9 +19,7 @@
         }
         &-link {
             font-style: normal;
-            font-size: 14px;
             line-height: 1.71;
-            letter-spacing: 0.03em;
             color: rgba(255, 255, 255, 0.6);
             transition: color 250ms var(--animation);
         
@@ -32,10 +30,7 @@
         }
         &-add-link {
             font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
             line-height: 1.71;
-            letter-spacing: 0.03em;
             color: var(--footer-logo-color);
             transition: color 250ms var(--animation);
         
@@ -51,10 +46,10 @@
     &-title {
         font-family: 'Roboto';
         font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 16px;
+        font-size: var(--main-text-size);
         letter-spacing: 0.03em;
+        font-weight: 700;
+        line-height: 16px;
         color: var(--main-title-color);
         text-transform: uppercase;
         margin-bottom: 20px;
