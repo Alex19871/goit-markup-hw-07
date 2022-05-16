@@ -30,7 +30,6 @@ header .container {
   font-size: var(--main-text-size);
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
   color: var(--header-color);
   transition: color 250ms var(--animation);
 }
@@ -84,13 +83,7 @@ header .container {
   color: var(--accent-color);
 }
 
-.contacts-list__mail-icon {
-  margin-right: 10px;
-  fill: currentColor;
-  align-self: center;
-}
-
-.contacts-list__phone-icon {
+.contacts-list__mail-icon, .contacts-list__phone-icon {
   margin-right: 10px;
   fill: currentColor;
   align-self: center;
@@ -282,15 +275,11 @@ header .container {
 
 .team-item-title {
   font-weight: 500;
-  font-size: var(--team-card-text);
-  line-height: 1.19;
-  text-align: center;
   color: var(--second-title-color);
   margin-bottom: 10px;
-  margin-top: 0px;
 }
 
-.specialty-text {
+.specialty-text, .team-item-title {
   font-size: var(--team-card-text);
   line-height: 1.19;
   text-align: center;
@@ -342,11 +331,11 @@ header .container {
 }
 .clients-link {
   display: flex;
+  justify-content: center;
   width: 170px;
   height: 92px;
   border: 1px solid var(--social-icon-color);
   border-radius: 4px;
-  justify-content: center;
   align-items: center;
   fill: var(--social-icon-color);
   transition: fill 250ms var(--animation), border-color 250ms var(--animation);
@@ -485,7 +474,7 @@ header .container {
 }
 
 .examples-text {
-  font-size: 16px;
+  font-size: var(--team-card-text);
   line-height: 1.88;
   color: var(--main-text-color);
 }
@@ -706,7 +695,7 @@ header .container {
 }
 .checkbox-text {
   line-height: 1.71;
-  color: var(--mail_phone_desc);
+  color: var(--main-text-color);
 }
 .checkbox-link {
   line-height: 1.71;
@@ -870,7 +859,7 @@ ul {
   --form-label-text: 12px;
 }
 
-.logo {
+.logo, .logo-part, .footer-logo {
   text-decoration: none;
   font-family: "Raleway";
   font-style: normal;
@@ -882,24 +871,11 @@ ul {
 }
 
 .footer-logo {
-  text-decoration: none;
   display: inline-block;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--footer-logo-color);
   margin-bottom: 20px;
 }
 
 .logo-part {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--accent-color);
 }/*# sourceMappingURL=main.css.map */

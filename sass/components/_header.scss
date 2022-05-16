@@ -31,7 +31,6 @@ header {
     font-size: var(--main-text-size);
     line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none;
     color: var(--header-color);
     transition: color 250ms var(--animation);
     &:hover, &:focus {
@@ -93,8 +92,6 @@ header {
 }
 
 .contacts-list__phone-icon {
-    margin-right: 10px;
-    fill: currentColor;
-    align-self: center;
+    @extend .contacts-list__mail-icon;
 }
 
