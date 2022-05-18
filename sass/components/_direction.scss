@@ -1,21 +1,21 @@
 .direction {
     padding-bottom: 94px;
-    &-list {
+    &__list {
             display: flex;
     }
-    &-item {
+    &__item {
         position: relative;
         margin-right: 30px;
     }
-    &-icon {
+    &__icon {
         display: block;
         width: 100%;
         height: auto;
     }
-    &-item:last-child {
+    &__item:last-child {
         margin-right: 0px;
     }
-    &-title {
+    &__title {
         font-weight: 700;
         font-size: var(--direction-title-size);
         line-height: 1.17;
@@ -24,7 +24,7 @@
         margin-bottom: 50px;
         margin-top: 0px;
     }
-    &-desk {
+    &__desk {
         position: absolute;
         display: flex;
         bottom: 0;

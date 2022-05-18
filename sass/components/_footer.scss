@@ -7,17 +7,17 @@
         margin-left: auto;
         margin-right: auto;
         align-items: center;
-        &-item {
+        &__item {
                 margin-bottom: 9px;
         }
-        &-item:last-child {
+        &__item:last-child {
             margin-bottom: 0px;
         }
         & .container {
             display: flex;
             align-items: baseline;
         }
-        &-link {
+        &__link {
             font-style: normal;
             line-height: 1.71;
             color: rgba(255, 255, 255, 0.6);
@@ -28,7 +28,7 @@
                 color: var(--accent-color);
             }
         }
-        &-add-link {
+        &__add-link {
             font-style: normal;
             line-height: 1.71;
             color: var(--footer-logo-color);
@@ -43,7 +43,7 @@
     .follow {
     display: block;
     margin-left: 70px;
-    &-title {
+    &__title {
         font-family: 'Roboto';
         font-style: normal;
         font-size: var(--main-text-size);
@@ -54,11 +54,11 @@
         text-transform: uppercase;
         margin-bottom: 20px;
     }
-    &-list {
+    &__list {
         display: flex;
         justify-content: center;
     }
-    &-link {
+    &__link {
         width: 44px;
         height: 44px;
         background: rgba(255, 255, 255, 0.1);
@@ -72,7 +72,7 @@
             background-color: var(--accent-color);
         }
     }
-    &-item:not(:last-child) {
+    &__item:not(:last-child) {
         margin-right: 10px;
     }
     }

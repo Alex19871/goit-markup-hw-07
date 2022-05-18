@@ -1,4 +1,4 @@
- .examples-title {
+ .about-examles__title {
      font-weight: 700;
      font-size: var(--card-text);
      line-height: 2;
@@ -6,7 +6,7 @@
      color: var(--second-title-color);
      margin-bottom: 4px;
  }
- .examples-text {
+ .about-examles__text {
      font-size: var(--team-card-text);
      line-height: 1.88;
      color: var(--main-text-color);
@@ -20,7 +20,7 @@
      display: flex;
      flex-wrap: wrap;
  }
- .examples-item {
+ .examples-list__item {
      margin-right: 30px;
      margin-bottom: 30px;
      &:nth-child(3n) {
@@ -30,7 +30,7 @@
         margin-bottom: 0px;
     }
  }
- .examples-icon {
+ .examples-list__icon {
      display: block;
      width: 100%;
      height: auto;
@@ -41,7 +41,7 @@
                 0px 4px 4px rgba(0, 0, 0, 0.06),
                 1px 4px 6px rgba(0, 0, 0, 0.16);
      }
-         &:hover .card-text,&:focus .card-text {
+         &:hover .card-over__text,&:focus .card-over__text {
         transform: translateY(0);
          }
  }
@@ -53,7 +53,7 @@
             max-width: 100%;
         }
  }
- .card-text {
+ .card-over__text {
      position: absolute;
      bottom: 0;
      left: 0;

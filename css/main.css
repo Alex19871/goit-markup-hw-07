@@ -74,10 +74,6 @@ header .container {
   justify-content: center;
 }
 
-.header-mail-link {
-  display: flex;
-}
-
 .contacts-list__item:first-child {
   margin-right: 30px;
 }
@@ -207,22 +203,22 @@ header .container {
 .direction {
   padding-bottom: 94px;
 }
-.direction-list {
+.direction__list {
   display: flex;
 }
-.direction-item {
+.direction__item {
   position: relative;
   margin-right: 30px;
 }
-.direction-icon {
+.direction__icon {
   display: block;
   width: 100%;
   height: auto;
 }
-.direction-item:last-child {
+.direction__item:last-child {
   margin-right: 0px;
 }
-.direction-title {
+.direction__title {
   font-weight: 700;
   font-size: var(--direction-title-size);
   line-height: 1.17;
@@ -231,7 +227,7 @@ header .container {
   margin-bottom: 50px;
   margin-top: 0px;
 }
-.direction-desk {
+.direction__desk {
   position: absolute;
   display: flex;
   bottom: 0;
@@ -251,16 +247,16 @@ header .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.team-list {
+.team__list {
   display: flex;
 }
-.team-item {
+.team__item {
   margin-right: 30px;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-title {
+.team__title {
   font-weight: 700;
   font-size: var(--direction-title-size);
   line-height: 1.17;
@@ -270,14 +266,8 @@ header .container {
   margin-top: 0px;
 }
 
-.team-item:last-child {
+.team__item:last-child {
   margin-right: 0px;
-}
-
-.team-soc-item .team-icon > img {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 .about-team-item {
@@ -285,26 +275,26 @@ header .container {
   margin-bottom: 16px;
 }
 
-.team-item-title {
+.about-team-item__title {
   font-weight: 500;
   color: var(--second-title-color);
   margin-bottom: 10px;
 }
 
-.specialty-text, .team-item-title {
+.about-team-item__text, .about-team-item__title {
   font-size: var(--team-card-text);
   line-height: 1.19;
   text-align: center;
   margin-top: 0px;
 }
 
-.team-soc-list {
+.team-soc__list {
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
 }
 
-.team-soc-link {
+.team-soc__link {
   width: 44px;
   height: 44px;
   background-color: var(--main-title-color);
@@ -315,12 +305,18 @@ header .container {
   fill: #AFB1B8;
   transition: fill 250ms var(--animation), background-color 250ms var(--animation);
 }
-.team-soc-link:hover, .team-soc-link:focus {
+.team-soc__link:hover, .team-soc__link:focus {
   background-color: var(--accent-color);
   fill: var(--main-title-color);
 }
 
-.team-soc-item + .team-soc-item {
+.team-soc__item .team__icon > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.team-soc__item + .team-soc__item {
   margin-left: 10px;
 }
 
@@ -328,7 +324,7 @@ header .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.clients-title {
+.clients__title {
   font-weight: 700;
   font-size: var(--direction-title-size);
   line-height: 1.17;
@@ -337,11 +333,11 @@ header .container {
   margin-bottom: 50px;
   margin-top: 0px;
 }
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: center;
 }
-.clients-link {
+.clients__link {
   display: flex;
   justify-content: center;
   width: 170px;
@@ -352,11 +348,11 @@ header .container {
   fill: var(--social-icon-color);
   transition: fill 250ms var(--animation), border-color 250ms var(--animation);
 }
-.clients-link:hover, .clients-link:focus {
+.clients__link:hover, .clients__link:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
-.clients-item + .clients-item {
+.clients__item + .clients__item {
   margin-left: 30px;
 }
 
@@ -369,32 +365,32 @@ header .container {
   margin-right: auto;
   align-items: center;
 }
-.footer-item {
+.footer__item {
   margin-bottom: 9px;
 }
-.footer-item:last-child {
+.footer__item:last-child {
   margin-bottom: 0px;
 }
 .footer .container {
   display: flex;
   align-items: baseline;
 }
-.footer-link {
+.footer__link {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms var(--animation);
 }
-.footer-link:hover, .footer-link:focus {
+.footer__link:hover, .footer__link:focus {
   color: var(--accent-color);
 }
-.footer-add-link {
+.footer__add-link {
   font-style: normal;
   line-height: 1.71;
   color: var(--footer-logo-color);
   transition: color 250ms var(--animation);
 }
-.footer-add-link:hover, .footer-add-link:focus {
+.footer__add-link:hover, .footer__add-link:focus {
   color: var(--accent-color);
 }
 
@@ -402,7 +398,7 @@ header .container {
   display: block;
   margin-left: 70px;
 }
-.follow-title {
+.follow__title {
   font-family: "Roboto";
   font-style: normal;
   font-size: var(--main-text-size);
@@ -413,11 +409,11 @@ header .container {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.follow-list {
+.follow__list {
   display: flex;
   justify-content: center;
 }
-.follow-link {
+.follow__link {
   width: 44px;
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
@@ -428,10 +424,10 @@ header .container {
   fill: var(--main-title-color);
   transition: background-color 250ms var(--animation);
 }
-.follow-link:hover, .follow-link:focus {
+.follow__link:hover, .follow__link:focus {
   background-color: var(--accent-color);
 }
-.follow-item:not(:last-child) {
+.follow__item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -440,21 +436,21 @@ header .container {
   padding-bottom: 94px;
 }
 
-.services-list {
+.services__list {
   display: flex;
   justify-content: center;
   margin-bottom: 34px;
 }
 
-.services-list > li {
+.services__list > li {
   margin-right: 8px;
 }
 
-.services-list > li:last-child {
+.services__list > li:last-child {
   margin-right: 0px;
 }
 
-.services-item-btn {
+.services__item-btn {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
@@ -469,14 +465,14 @@ header .container {
   transition: background-color 250ms var(--animation), color 250ms var(--animation), border-color 250ms var(--animation), box-shadow 250ms var(--animation);
   cursor: pointer;
 }
-.services-item-btn:hover, .services-item-btn:focus {
+.services__item-btn:hover, .services__item-btn:focus {
   color: var(--main-title-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
-.examples-title {
+.about-examles__title {
   font-weight: 700;
   font-size: var(--card-text);
   line-height: 2;
@@ -485,7 +481,7 @@ header .container {
   margin-bottom: 4px;
 }
 
-.examples-text {
+.about-examles__text {
   font-size: var(--team-card-text);
   line-height: 1.88;
   color: var(--main-text-color);
@@ -502,28 +498,28 @@ header .container {
   flex-wrap: wrap;
 }
 
-.examples-item {
+.examples-list__item {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.examples-item:nth-child(3n) {
+.examples-list__item:nth-child(3n) {
   margin-right: 0px;
 }
-.examples-item:nth-last-child(-n+3) {
+.examples-list__item:nth-last-child(-n+3) {
   margin-bottom: 0px;
 }
 
-.examples-icon {
+.examples-list__icon {
   display: block;
   width: 100%;
   height: auto;
   text-decoration: none;
   transition: box-shadow 250ms var(--animation);
 }
-.examples-icon:hover, .examples-icon:focus {
+.examples-list__icon:hover, .examples-list__icon:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.examples-icon:hover .card-text, .examples-icon:focus .card-text {
+.examples-list__icon:hover .card-over__text, .examples-list__icon:focus .card-over__text {
   transform: translateY(0);
 }
 
@@ -536,7 +532,7 @@ header .container {
   max-width: 100%;
 }
 
-.card-text {
+.card-over__text {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -752,7 +748,7 @@ header .container {
 .mailing {
   margin-left: auto;
 }
-.mailing-header {
+.mailing__header {
   display: block;
   margin-bottom: 20px;
   font-weight: 700;
@@ -760,10 +756,10 @@ header .container {
   text-transform: uppercase;
   color: var(--footer-logo-color);
 }
-.mailing-form {
+.mailing__form {
   display: flex;
 }
-.mailing-input {
+.mailing__input {
   width: 358px;
   padding: 15px 0 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -773,7 +769,7 @@ header .container {
   background-color: rgba(0, 0, 0, 0);
   color: var(--main-title-color);
 }
-.mailing-btn {
+.mailing__btn {
   display: flex;
   align-items: center;
   text-align: center;
@@ -790,7 +786,7 @@ header .container {
   line-height: 1.88;
   cursor: pointer;
 }
-.mailing-icon {
+.mailing__icon {
   display: inline-block;
   margin-left: 10px;
   fill: var(--footer-logo-color);

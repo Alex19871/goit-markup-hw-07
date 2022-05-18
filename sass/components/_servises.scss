@@ -3,21 +3,21 @@
     padding-bottom: 94px;
 }
 
-.services-list {
+.services__list {
     display: flex;
     justify-content: center;
     margin-bottom: 34px;
 }
 
-.services-list>li {
+.services__list>li {
     margin-right: 8px;
 }
 
-.services-list>li:last-child {
+.services__list>li:last-child {
     margin-right: 0px;
 }
 
-.services-item-btn {
+.services__item-btn {
 
     font-family: 'Roboto';
     font-weight: 500;

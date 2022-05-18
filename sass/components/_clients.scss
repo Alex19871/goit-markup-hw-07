@@ -1,7 +1,7 @@
 .clients {
     padding-top: 94px;
     padding-bottom: 94px;
-    &-title {
+    &__title {
             font-weight: 700;
             font-size: var(--direction-title-size);
             line-height: 1.17;
@@ -10,11 +10,11 @@
             margin-bottom: 50px;
             margin-top: 0px;
     }
-    &-list {
+    &__list {
             display: flex;
             justify-content: center;
     }
-    &-link {
+    &__link {
         display: flex;
         justify-content: center;
         width: 170px;
@@ -26,11 +26,11 @@
         transition: fill 250ms var(--animation),
             border-color 250ms var(--animation);
     }
-    &-link:hover,&-link:focus {
+    &__link:hover,&__link:focus {
         fill: var(--accent-color);
         border: 1px solid var(--accent-color);
     }
-    &-item+&-item {
+    &__item+&__item {
         margin-left: 30px;
     }
 }
